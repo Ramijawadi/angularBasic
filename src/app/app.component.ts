@@ -7,8 +7,23 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'project';
+  title: string = 'hello';
+  btn: string = 'click me';
+  name: string = 'rami jawadi';
+  desc: string = 'front end developper';
+
+  //attribute
+
+  isDisabled: boolean = true;
+  image: string = '../assets/js.png';
+
+  //styling
+  color: string = 'red';
+  bgColor: string = 'lightBlue';
+  bgDiv: string = '#22c1c3';
+  parag: string = 'font-size: 50px ; color: darkblue';
+  titleColor:string='blue';
 }
