@@ -14,6 +14,7 @@ export class AppComponent {
   btn: string = 'click me';
   name: string = 'rami jawadi';
   desc: string = 'front end developper';
+  counter :number = 0 ;
 
   //attribute
 
@@ -26,4 +27,18 @@ export class AppComponent {
   bgDiv: string = '#22c1c3';
   parag: string = 'font-size: 50px ; color: darkblue';
   titleColor:string='blue';
+
+  decremenetCounter () {
+
+    this.counter -- ;
+  }
+  
+
+  
+  incerementCounter () {
+
+  this.counter ++ ;
 }
+}
+
+
