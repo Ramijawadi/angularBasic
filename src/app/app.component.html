@@ -31,5 +31,21 @@
 <h2 class="box" [ngStyle]="{'backgroundColor':selected}">your Box</h2>
 
 <!-- *ngIf  -->
+
+<h1>{{title}}</h1>
+<div *ngIf="isLoggedIn">Welcome {{name}}</div>
+<div *ngIf="!isLoggedIn && false">Please login to see the content</div>
+
+ 
 <div *ngIf="isLoggedIn; else logOut">Welcome back {{name}}</div>
  <ng-template #logOut>Please login</ng-template>
+
+ <h1> the title is {{title}}</h1>
+ <!-- if isLoggedIn is false il execute le else  -->
+<div *ngIf="isLoggedIn; else logOut">Welcome back , {{name}}</div> 
+ <ng-template #logOut>Please login</ng-template>
+
+
+ <ul>
+ <li *ngFor="let element of elements; let i= index">{{i}}  {{ element }}</li>
+ </ul>

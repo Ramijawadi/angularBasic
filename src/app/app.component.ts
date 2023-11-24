@@ -17,7 +17,8 @@ export class AppComponent {
   name: string = 'rami jawadi';
   desc: string = 'front end developper';
   counter: number = 0;
-
+  elements: string[] = ['rami' , 'alex', 'samir'];
+  
   //attribute
 
   isDisabled: boolean = true;
@@ -30,6 +31,11 @@ export class AppComponent {
   parag: string = 'font-size: 50px ; color: darkblue';
   titleColor: string = 'blue';
   Color: boolean = false;
+
+  titles:string = 'Structure Directives';
+  names:string ="rami jawadi";
+  isLoggedIn:boolean= true;
+
 
   decremenetCounter() {
     this.counter--;
