@@ -18,6 +18,7 @@ export class AppComponent {
   desc: string = 'front end developper';
   counter: number = 0;
   elements: string[] = ['rami' , 'alex', 'samir'];
+  grade: string = 'B';
   
   //attribute
 

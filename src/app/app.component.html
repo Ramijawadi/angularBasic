@@ -49,3 +49,11 @@
  <ul>
  <li *ngFor="let element of elements; let i= index">{{i}}  {{ element }}</li>
  </ul>
+
+ <div [ngSwitch]="grade" >
+<h1 *ngSwitchCase="'A'">Excellent</h1>
+<h1 *ngSwitchCase="'B'">Good</h1>
+<h1  *ngSwitchDefault>Unknown</h1>
+
+
+ </div>
