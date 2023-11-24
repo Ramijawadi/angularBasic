@@ -45,6 +45,14 @@ input: string = "initial value";
 //ngClass
 
 message : string="this is a danger message";
-classes : string ="danger text-size"
+classes : string ="danger text-size";
+contact: string = "Rami jawadi Monastir ";
+contactClass :string ="contact";
+
+
+//ngStyle 
+
+selected : string ="red";
 
 }
+

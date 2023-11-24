@@ -21,3 +21,15 @@
 <!-- ngClass -->
 
 <div [ngClass]="classes">{{message}}</div>
+
+<h1 [ngClass]="contactClass">you can contact me in : {{contact}}</h1>
+
+<!-- ngStyle : is used to inline styling for an HTML element -->
+
+<h1 [ngStyle]="{'color' : 'blue'}">you are welcome</h1>
+
+<h2 class="box" [ngStyle]="{'backgroundColor':selected}">your Box</h2>
+
+<!-- *ngIf  -->
+<div *ngIf="isLoggedIn; else logOut">Welcome back {{name}}</div>
+ <ng-template #logOut>Please login</ng-template>
