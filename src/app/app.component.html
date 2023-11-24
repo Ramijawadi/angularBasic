@@ -15,6 +15,9 @@
 <button (click)="decremenetCounter()">Click to decrement</button>
 <p [class.textColor]="Color"  > counter  :  {{counter}}</p>
 
-
-<input [(ngModel)]="input" placeholder="enter text ..." />
+<!-- ngModel  -->
+<input [(ngModel)]="input" type="text"  placeholder="enter text ..." />
 <p>you entered : {{input}}</p>
+<!-- ngClass -->
+
+<div [ngClass]="classes">{{message}}</div>

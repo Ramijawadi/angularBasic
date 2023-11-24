@@ -38,6 +38,13 @@ export class AppComponent {
   incerementCounter() {
     this.counter++;
   }
-input: string = "initial value"
+
+  // ngModel
+input: string = "initial value";
+
+//ngClass
+
+message : string="this is a danger message";
+classes : string ="danger text-size"
 
 }
